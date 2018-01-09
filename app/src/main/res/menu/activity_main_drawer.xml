@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_current_balance"
+            android:icon="@drawable/person"
+            android:title="Текущий баланс" />
+        <item
+            android:id="@+id/nav_history_payment"
+            android:icon="@drawable/history_payment"
+            android:title="История оплаты" />
+
+        <item
+            android:id="@+id/nav_history_meter_reading"
+            android:icon="@drawable/indication"
+            android:title="История показаний" />
+        <item
+            android:id="@+id/nav_give_meter_reading"
+            android:icon="@drawable/upload"
+            android:title="Передача показаний" />
+        <item
+            android:id="@+id/nav_bill_payment"
+            android:icon="@drawable/payment"
+            android:title="Оплата счета" />
+        <item
+            android:id="@+id/nav_complaint"
+            android:icon="@drawable/complaint"
+            android:title="Жалобы" />
+    </group>
+
+    <item android:title="Управление">
+        <menu>
+            <item
+                android:id="@+id/nav_visit_site"
+                android:icon="@drawable/about"
+                android:title="О нас" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/exit"
+                android:title="Выход" />
+        </menu>
+    </item>
+
+</menu>

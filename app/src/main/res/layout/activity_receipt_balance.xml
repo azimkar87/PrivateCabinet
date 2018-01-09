@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    tools:context="com.example.user.privatecabinet.receiptBalance">
+    <HorizontalScrollView
+        android:id="@+id/hscroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="525dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="131dp"
+                        app:srcCompat="@drawable/bts_logo" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:text="ЛС"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_weight="0.09"
+                        android:text="ФИО"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_weight="0.09"
+                        android:text="Адрес"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/qr_logo" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <TableLayout
+                    android:id="@+id/myTableMeterReading"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/meterReading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text="Показания"
+                            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+                        <TextView
+                            android:id="@+id/MeterReading1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text="  №1  "
+                            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+                        <TextView
+                            android:id="@+id/MeterReading2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text="  №2  "
+                            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                        <TextView
+                            android:id="@+id/MeterReading3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text="  №3  "
+                            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                        <TextView
+                            android:id="@+id/MeterReading4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text="  №4  "
+                            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                        <TextView
+                            android:id="@+id/MeterReading5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text="  №5  "
+                            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/currentMeterReading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text="Текущее"
+                            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+                        <TextView
+                            android:id="@+id/currentMeterReading1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+                        <TextView
+                            android:id="@+id/currentMeterReading2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+                        <TextView
+                            android:id="@+id/currentMeterReading3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+                        <TextView
+                            android:id="@+id/currentMeterReading4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+                        <TextView
+                            android:id="@+id/currentMeterReading5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/previousMeterReading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text="Предыдущее"
+                            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+                        <TextView
+                            android:id="@+id/previousMeterReading1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+                        <TextView
+                            android:id="@+id/previousMeterReading2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+                        <TextView
+                            android:id="@+id/previousMeterReading3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                        <TextView
+                            android:id="@+id/previousMeterReading4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                        <TextView
+                            android:id="@+id/previousMeterReading5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                    </TableRow>
+                </TableLayout>
+
+
+
+                <ZoomControls
+                    android:id="@+id/zoomControls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TableLayout
+                    android:id="@+id/myTableSum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TableRow
+                        android:id="@+id/myTableSumRow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/myTableSumHeaderTypePayment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/cell_shape"
+                            android:padding="25dp"
+                            android:gravity="center"
+                            android:text="Вид платежа"
+                            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                        <TextView
+                            android:id="@+id/myTableSumHeaderUnit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/cell_shape"
+                            android:padding="25dp"
+                            android:gravity="center"
+                            android:text="Ед.изм."
+                            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                        <TableRow
+                            android:id="@+id/myTableSumSubRow"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/myTableSumHeaderQuantity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/cell_shape"
+                                    android:padding="10dp"
+                                    android:text="Количество"
+                                    android:gravity="center"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/myTableSumHeaderByContract"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/cell_shape"
+                                        android:padding="4dp"
+                                        android:gravity="center"
+                                        android:text="По договору"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                                    <TextView
+                                        android:id="@+id/myTableSumHeaderByAct"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/cell_shape"
+                                        android:padding="4dp"
+                                        android:gravity="center"
+                                        android:text="По акту"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                                    <TextView
+                                        android:id="@+id/myTableSumHeaderByFact"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/cell_shape"
+                                        android:padding="4dp"
+                                        android:gravity="center"
+                                        android:text="По факту"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </TableRow>
+                        <TableRow
+                            android:id="@+id/myTableSumAccrual"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/myTableSumSubAccrual"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/cell_shape"
+                                    android:padding="10dp"
+                                    android:text="Начислено"
+                                    android:gravity="center"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+                                    <TextView
+                                        android:id="@+id/myTableSumHeaderHotWater"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/cell_shape"
+                                        android:padding="4dp"
+                                        android:text="Отопление ГВС"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+                                            <TextView
+                                                android:id="@+id/myTableSumHeaderTariffHotWater"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:background="@drawable/cell_shape"
+                                                android:padding="4dp"
+                                                android:text=" Тариф "
+                                                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                                            <TextView
+                                                android:id="@+id/myTableSumHeaderTariffSumHotWater"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="@drawable/cell_shape"
+                                                android:padding="4dp"
+                                                android:text="Сумма"
+                                                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+                                    <TextView
+                                        android:id="@+id/myTableSumHeaderMaintenance"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/cell_shape"
+                                        android:padding="4dp"
+                                        android:text="Техосблуживание"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+                                            <TextView
+                                                android:id="@+id/myTableSumHeaderTariffMaintenance"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:background="@drawable/cell_shape"
+                                                android:padding="4dp"
+                                                android:text=" Тариф "
+                                                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                                            <TextView
+                                                android:id="@+id/myTableSumHeaderTariffSummMaintenance"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="@drawable/cell_shape"
+                                                android:padding="4dp"
+                                                android:text="Сумма"
+                                                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                                        </LinearLayout>
+                                        </LinearLayout>
+
+                                    <TextView
+                                        android:id="@+id/myTableSumHeaderTotal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/cell_shape"
+                                        android:padding="4dp"
+                                        android:gravity="center"
+                                        android:text="Итого"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </TableRow>
+
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+</ScrollView>
